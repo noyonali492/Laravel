@@ -13,12 +13,23 @@
     getAddress();
     */
   //function er modde golobal variable use kore.
-    $cell ="ali";
-    function getAddress(){
-       global $cell;
-        echo $cell;
+    // $cell ="ali";
+    // function getAddress(){
+    //    global $cell;
+    //     echo $cell;
+    // }
+    // getAddress();
+
+    function getStatic(){
+      static $qty=1;
+      echo $qty. "</br>";
+        $qty+=5;
+
     }
-    getAddress();
+    getStatic();
+    getStatic();
+    getStatic();
+    getStatic();
 
  echo "noyon";
 ?>

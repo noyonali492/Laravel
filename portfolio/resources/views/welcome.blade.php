@@ -469,9 +469,9 @@
                 <div class="portfolio-container"> 
                     <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <img src="{{asset('assets/imgs/web-1.jpg')}}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                                <a class="img-popup" href="{{asset('assets/imgs/web-1.jpg')}}"></a>
                                 <div class="text-holder">
                                     <h6 class="title">WEB</h6>
                                     <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
@@ -481,9 +481,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <img src="{{asset('assets/imgs/web-2.jpg')}}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
+                                <a class="img-popup" href="{{asset('assets/imgs/web-2.jpg')}}"></a>
                                 <div class="text-holder">
                                     <h6 class="title">WEB</h6>
                                     <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
@@ -493,9 +493,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 advertising new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                            <img src="{{asset('assets/imgs/advertising-2.jpg')}}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
                             <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                                <a class="img-popup" href="{{asset('assets/imgs/advertising-2.jpg')}}"></a>
                                 <div class="text-holder">
                                     <h6 class="title">ADVERSTISING</h6>
                                     <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
@@ -505,9 +505,9 @@
                     </div> 
                     <div class="col-md-6 col-lg-4 web">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <img src="{{asset('assets/imgs/web-4.jpg')}}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
+                                <a class="img-popup" href="{{asset('assets/imgs/web-4.jpg')}}"></a>
                                 <div class="text-holder">
                                     <h6 class="title">WEB</h6>
                                     <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
@@ -518,9 +518,9 @@
 
                     <div class="col-md-6 col-lg-4 advertising"> 
                         <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                            <img src="{{asset('assets/imgs/advertising-1.jpg')}}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
                             <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
+                                <a class="img-popup" href="{{asset('assets/imgs/advertising-1.jpg')}}"></a>
                                 <div class="text-holder">
                                     <h6 class="title">ADVERSITING</h6>
                                     <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
@@ -772,20 +772,20 @@
     </footer>
 
 	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="{{asset('assets/vendors/jquery/jquery-3.4.1.js')}}"></script>
+    <script src="{{asset('assets/vendors/bootstrap/bootstrap.bundle.js')}}"></script>
 
     <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="{{asset('assets/vendors/bootstrap/bootstrap.affix.js')}}"></script>
 
     <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    <script src="{{asset('assets/vendors/isotope/isotope.pkgd.js')}}"></script>
     
     <!-- Google mpas -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
 
     <!-- JohnDoe js -->
-    <script src="assets/js/johndoe.js"></script>
+    <script src="{{asset('assets/js/johndoe.js')}}"></script>
 
 </body>
 </html>

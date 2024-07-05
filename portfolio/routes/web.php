@@ -24,6 +24,10 @@ Route::get('/home', function () {
 Route::view('/home','home');
 
 //Route::view('post','/post/post');
-Route::get('/post/post', function () {
-    return view('post');
+// Route::get('/post/post', function () {
+//     return view('post');
+// });
+
+Route::get('/post/{id}', function (string $id ) {
+    return "<h1>Post Id ". $id ."</h1>";
 });

@@ -28,6 +28,6 @@ Route::view('/home','home');
 //     return view('post');
 // });
 
-Route::get('/post/{id}', function (string $id ) {
+Route::get('/post/{id?}', function (string $id = null ) {
     return "<h1>Post Id ". $id ."</h1>";
 });

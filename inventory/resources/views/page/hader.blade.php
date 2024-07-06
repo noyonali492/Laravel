@@ -1,3 +1,5 @@
 <h1>Hader Page</h1>
 
-{{$name}}
+@foreach ($name as $n)
+    <p>{{$n}}</p>
+@endforeach

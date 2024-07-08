@@ -10,11 +10,11 @@
     @foreach ($user as $item)
        {{$item}}
        @if ($item == 'noyon')
-       <h1>User Active </h1>
-       @elseif($item == 'aalim')
-       <h1>User Active </h1>
+       <h1>User Active {{$item}} </h1>
+       @elseif($item == 'alim')
+       <h1>User Active {{$item}}</h1>
        @else
-       <h1>User UnActive </h1>
+       <h1>User UnActive {{$item}}</h1>
        @endif
    @endforeach
 

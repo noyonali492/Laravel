@@ -11,10 +11,11 @@ public function show()
 {
     $user = [
         'name' => 'John Doe',
-        'isAdmin' => true
+        'isAdmin' => true,
+        'id' => 1
     ];
 
-    return view('home', compact('user'));
+    return view('protfolio', compact('user'));
 }
 
 }

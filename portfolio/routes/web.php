@@ -48,3 +48,6 @@ Route::get('/post/{id?}/{name}', function (string $id, string $name) {
     //return "<h1>Post Id ". $id ."</h1><h1>Post Id ". $n ."</h1>";
     return view('post',['id'=>$id, 'name'=>$name]);
 });
+
+
+Route::get('/protfolio','UserController@show');

@@ -15,13 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*
-Route::get('/home', function () {
-    return view('home');
-});
-*/
 
-Route::view('/home','home');
+Route::get('/home/{id}', function ($user) {
+
+    //$user= "noyon";
+    return view('home',compact('user'));
+
+});
+
+
+//Route::view('/home','home');
 
 //Route::view('post','/post/post');
 // Route::get('/post/post', function () {

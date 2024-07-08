@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $info= ['Noyon','khan', 'alim'];
+    return view('welcome',compact('info'));
+});
+
+
+Route::get('/home', function () {
+    return view('home');
 });

@@ -16,12 +16,22 @@ Route::get('/', function () {
 });
 
 
-Route::get('/home/{id}', function ($user) {
+Route::get('/home', function () {
 
-    //$user= "noyon";
+    $user= ['noyon','alim'];
     return view('home',compact('user'));
 
 });
+
+// {{-- 
+//     Route::get('/home/{id}', function ($user) {
+
+//         //$user= "noyon";
+//         return view('home',compact('user'));
+    
+//     });
+    
+//     --}}
 
 
 //Route::view('/home','home');

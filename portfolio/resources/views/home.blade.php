@@ -7,12 +7,21 @@
 <body>
     <h1>Welcome</h1>
 
-   {{$user}}
+    @foreach ($user as $item)
+       {{$item}}
+       @if ($item == 'noyon')
+       <h1>User Active </h1>
+       @elseif($item == 'aalim')
+       <h1>User Active </h1>
+       @else
+       <h1>User UnActive </h1>
+       @endif
+   @endforeach
 
-   @if ($user== 'noyon')
+   {{-- @if ($user== 'noyon')
        <h1>User Active {{$user}}</h1>
    @else
    <h1>User Unactive {{$user}}</h1>
-   @endif
+   @endif --}}
 </body>
 </html>

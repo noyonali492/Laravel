@@ -31,3 +31,9 @@ route::prefix('page')->group(function(){
 
 
 });
+
+
+
+Route::get('Operator/', function () {
+    return view('Operator');
+});

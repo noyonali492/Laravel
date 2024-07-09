@@ -40,3 +40,29 @@ x -= y {{ $b -= 1}}<br>
 x *= y {{$x *= 6}}<br>
 x -= y {{$y /= 5}}<br>
 x %= y {{$y %= 5}}
+
+
+<h1>PHP Increment / Decrement Operators</h1>
+
+++$x	Pre-increment	Increments $x by one, then returns $x	 <br>
+$x++	Post-increment	Returns $x, then increments $x by one	<br>
+--$x	Pre-decrement	Decrements $x by one, then returns $x	<br>
+$x--	Post-decrement	Returns $x, then decrements $x by one  <br>
+
+
+@php
+    $x=5;
+    $y=5;
+    $z=5;
+    $n=5;
+@endphp
+
+X= {{ $x}} <br>
+Y= {{ $y}} <br>
+Z= {{ $z}} <br>
+N= {{ $n}} <br>
+
+++$X= {{++$x}} <br>
+$Y++ = {{$y++}} <br>
+--$Z = {{ --$z}} <br>
+$N-- = {{ $n-- }} <br>

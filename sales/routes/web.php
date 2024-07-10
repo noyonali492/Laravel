@@ -37,3 +37,15 @@ route::prefix('page')->group(function(){
 Route::get('Operator/', function () {
     return view('Operator');
 });
+
+Route::get('array/', function () {
+
+        $username= "Noyon";
+        $email= "noyonahmed@gmail.com";
+        $cell="01797445516";
+        $salary= 35000;
+
+
+   // return view('array')->with('username',$username);
+    return view('array')->with('username',$username)->with('email',$email);
+});

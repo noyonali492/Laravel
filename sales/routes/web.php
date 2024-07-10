@@ -43,9 +43,14 @@ Route::get('array/', function () {
         $username= "Noyon";
         $email= "noyonahmed@gmail.com";
         $cell="01797445516";
-        $salary= 35000;
+        $salary= "35000";
+        $brother="Naim";
 
+
+    $personalinfo=array("Noyon","noyonahmed@gmail.com","01797445516","35000","naim");
+
+    return view('array',compact('personalinfo'));
 
    // return view('array')->with('username',$username);
-    return view('array')->with('username',$username)->with('email',$email);
+   // return view('array')->with('username',$username)->with('email',$email);
 });

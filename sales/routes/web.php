@@ -54,7 +54,11 @@ Route::get('array/', function () {
         'email'=>"noyonahmed@gmail.com",
         'cell'=>"01797445516",
         'salary'=>"35000",
-        'brother'=>"naim"
+        'brother'=> array(
+            'username'=>"molla",
+            'class'=>"Inter",
+            'village'=>"Dapunia"
+        ),
     );
 
     return view('array',compact('personalinfo'));

@@ -13,6 +13,8 @@
 {{-- {{$personalinfo[0]}} --}}
 
 {{-- Associative arrays --}}
+{{$personalinfo['email']}}
+{{-- Multidimensional arrays --}}
 
-{{$personalinfo['salary']}}
+{{$personalinfo['brother']['class']}}
 

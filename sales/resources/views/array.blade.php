@@ -10,5 +10,9 @@
 
 {{-- Array Indexed --}}
 
-{{$personalinfo[0]}}
+{{-- {{$personalinfo[0]}} --}}
+
+{{-- Associative arrays --}}
+
+{{$personalinfo['salary']}}
 

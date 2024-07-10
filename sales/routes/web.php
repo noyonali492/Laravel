@@ -47,7 +47,15 @@ Route::get('array/', function () {
         $brother="Naim";
 
 
-    $personalinfo=array("Noyon","noyonahmed@gmail.com","01797445516","35000","naim");
+    //$personalinfo=array("Noyon","noyonahmed@gmail.com","01797445516","35000","naim");
+
+    $personalinfo=array(
+        'key'=>"value",
+        'email'=>"noyonahmed@gmail.com",
+        'cell'=>"01797445516",
+        'salary'=>"35000",
+        'brother'=>"naim"
+    );
 
     return view('array',compact('personalinfo'));
 

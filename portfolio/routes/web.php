@@ -50,7 +50,7 @@ Route::get('/post/{id?}/{name}', function (string $id, string $name) {
 });
 
 
-Route::get('/protfolio','UserController@show');
+//Route::get('/protfolio','UserController@show');
 
 
 Route::get('array/', function () {
@@ -81,4 +81,13 @@ return view('array',compact('personalinfo'));
 // return view('array')->with('username',$username);
 // return view('array')->with('username',$username)->with('email',$email);
 });
+
+
+Route::get('/protfolio', function () {
+    return view('pages.portfolio');
+});
+Route::get('/about', function () {
+    return view('pages.about');
+});
+
 

@@ -93,3 +93,8 @@ Route::get('/resume', function () {
     return view('pages.resume');
 });
 
+Route::get('/blog', function () {
+    return view('pages.blog');
+});
+
+

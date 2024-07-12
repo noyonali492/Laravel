@@ -1,4 +1,5 @@
 @extends('layouts.masterlayout');
+
 <div class="container-fluid">
     <div id="about" class="row about-section">
         <div class="col-lg-4 about-card">
@@ -636,7 +637,7 @@
     </div>
 </section>
 
-<div class="section contact" id="contact">
+<div class="section contact" id="">
     <div id="map" class="map"></div>
     <div class="container">
         <div class="row">

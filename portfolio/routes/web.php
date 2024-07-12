@@ -89,5 +89,7 @@ Route::get('/protfolio', function () {
 Route::get('/about', function () {
     return view('pages.about');
 });
-
+Route::get('/resume', function () {
+    return view('pages.resume');
+});
 

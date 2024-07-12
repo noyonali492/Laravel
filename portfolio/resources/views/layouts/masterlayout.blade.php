@@ -44,7 +44,7 @@
                         <a href="/about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/post" class="nav-link">Resume</a>
+                        <a href="/resume" class="nav-link">Resume</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
@@ -69,7 +69,11 @@
         </div>
     </nav>
 
+   <section>
+
     @yield('content')
+
+   </section>
 
     <footer class="footer py-3">
         <div class="container">

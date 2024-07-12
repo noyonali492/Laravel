@@ -62,7 +62,7 @@
                         <a href="/blog" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="/contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>

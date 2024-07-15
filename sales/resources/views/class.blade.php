@@ -2,7 +2,7 @@
 
 @php
 
-// class Stdinfo{ 
+// class Std { 
 //    public $name="Shobuz";
 //    public function Mathsubject(){
 //     echo $this->name;
@@ -81,24 +81,41 @@
 
 
 
+// class man{
+//     public $name;
+//     public $age;
+//     public $address;
+
+//     function info($name, $age,$address){
+//         $this->name = $name;
+//         $this->age = $age;
+//         $this->address = $address;
+//         return "Name : ".$this->name. "Age : " .$this->age.  " Adress : "  .$this->address;
+        
+//     }
+// }
+// $maninf = new man();
+//  echo $maninf->info('noyon','26','dhaka');
+
+//  $ninfo= new man();
+//  echo "<br>". $ninfo->info('alim','25','dapuni');
+
+
 class man{
     public $name;
     public $age;
-    public $address;
 
-    function info($name, $age,$address){
-        $this->name = $name;
+    function  __construct($name,$age){
+        $this->name =$name;
         $this->age = $age;
-        $this->address = $address;
-        return "Name : ".$this->name. "Age : " .$this->age.  " Adress : "  .$this->address;
-        
+    }
+    function info(){
+        return $this->name. "  is ". $this->age;
     }
 }
-$maninf = new man();
- echo $maninf->info('noyon','26','dhaka');
 
- $ninfo= new man();
- echo "<br>". $ninfo->info('alim','25','dapuni');
+$maninfo = new man('noyon','24');
+echo $maninfo->info();
 
 
 @endphp

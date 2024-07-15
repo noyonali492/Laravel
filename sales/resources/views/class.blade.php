@@ -65,19 +65,40 @@
 
 
 
+// class man{
+//     public $name;
+//     public $age;
+//     public $address;
+
+//     function info(){
+//         return " Noyon Ahmmed";
+//     }
+// }
+// $maninf = new man();
+
+// echo $maninf->info();
+// echo $maninf->name = "alim";
+
+
+
 class man{
     public $name;
     public $age;
     public $address;
 
-    function info(){
-        return " Noyon Ahmmed";
+    function info($name, $age,$address){
+        $this->name = $name;
+        $this->age = $age;
+        $this->address = $address;
+        return "Name : ".$this->name. "Age : " .$this->age.  " Adress : "  .$this->address;
+        
     }
 }
 $maninf = new man();
+ echo $maninf->info('noyon','26','dhaka');
 
-echo $maninf->info();
-echo $maninf->name = "alim";
+ $ninfo= new man();
+ echo "<br>". $ninfo->info('alim','25','dapuni');
 
 
 @endphp

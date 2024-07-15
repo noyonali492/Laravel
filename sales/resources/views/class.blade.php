@@ -51,16 +51,33 @@
 
 
 
-class Fruit {
-  public $name;
-  protected $color;
-  private $weight;
-}
+// class Fruit {
+//   public $name;
+//   protected $color;
+//   private $weight;
+// }
 
-$mango = new Fruit();
-$mango->name = 'Mango'; // OK
-$mango->color = 'Yellow'; // ERROR
-$mango->weight = '300'; // ERROR
+// $mango = new Fruit();
+// $mango->name = 'Mango'; // OK
+// $mango->color = 'Yellow'; // ERROR
+// $mango->weight = '300'; // ERROR
+
+
+
+
+class man{
+    public $name;
+    public $age;
+    public $address;
+
+    function info(){
+        return " Noyon Ahmmed";
+    }
+}
+$maninf = new man();
+
+echo $maninf->info();
+echo $maninf->name = "alim";
 
 
 @endphp

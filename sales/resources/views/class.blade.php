@@ -17,19 +17,37 @@
 
 
 
-    class techerinfo{ 
+    // class techerinfo{ 
 
-    public $math_techer_name="Abdul Mannan";
-    public $camisty_ath_techer_name= "Rudro";
-        public function teinfo(){
-            echo $this->math_techer_name."<br>" ;
+    // public $math_techer_name="Abdul Mannan";
+    // private $camisty_ath_techer_name= "Rudro";
+    //     public function teinfo(){
+    //         echo $this->math_techer_name."<br>" ;
             
-            echo $this->camisty_ath_techer_name;
-        }
+    //         echo $this->camisty_ath_techer_name;
+    //     }
     
+    // }
+
+    // $altecherinfo = new techerinfo();
+    // $altecherinfo->teinfo();
+
+
+    class stdname{
+        public $name= "Noyon";
+        private $techer_name= " alomgir";
+
+        public function stdinfo(){
+            $this->name;
+           echo $this->techer_name;
+        }
     }
 
-    $altecherinfo = new techerinfo();
-    $altecherinfo->teinfo();
+    $stdnameinfo= new stdname();
+
+    $stdnameinfo->stdinfo();
+
+    echo $stdnameinfo->name;
+
 
 @endphp

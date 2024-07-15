@@ -66,3 +66,9 @@ Route::get('array/', function () {
    // return view('array')->with('username',$username);
    // return view('array')->with('username',$username)->with('email',$email);
 });
+
+
+
+Route::get('/class', function () {
+    return view('class');
+});

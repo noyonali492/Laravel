@@ -101,21 +101,35 @@
 //  echo "<br>". $ninfo->info('alim','25','dapuni');
 
 
+// class man{
+//     public $name;
+//     public $age;
+
+//     function  __construct($name,$age){
+//         $this->name =$name;
+//         $this->age = $age;
+//     }
+//     function info(){
+//         return $this->name. "  is ". $this->age;
+//     }
+// }
+
+// $maninfo = new man('noyon','24');
+// echo $maninfo->info();
+
+
 class man{
     public $name;
     public $age;
-
-    function  __construct($name,$age){
-        $this->name =$name;
+     function __construct($name,$age){
+        $this->name= $name;
         $this->age = $age;
-    }
-    function info(){
-        return $this->name. "  is ". $this->age;
-    }
+     }
+     function __destruct(){
+        echo $this->name . " is " .$this->age;
+     }
 }
 
-$maninfo = new man('noyon','24');
-echo $maninfo->info();
-
+$maninfo = new man('shobuz','26');
 
 @endphp

@@ -33,21 +33,34 @@
     // $altecherinfo->teinfo();
 
 
-    class stdname{
-        public $name= "Noyon";
-        private $techer_name= " alomgir";
+    // class stdname{
+    //     public $name= "Noyon";
+    //     private $techer_name= " alomgir";
 
-        public function stdinfo(){
-            $this->name;
-           echo $this->techer_name;
-        }
-    }
+    //     public function stdinfo(){
+    //         $this->name;
+    //        echo $this->techer_name;
+    //     }
+    // }
 
-    $stdnameinfo= new stdname();
+    // $stdnameinfo= new stdname();
 
-    $stdnameinfo->stdinfo();
+    // $stdnameinfo->stdinfo();
 
-    echo $stdnameinfo->name;
+    // echo $stdnameinfo->name;
+
+
+
+class Fruit {
+  public $name;
+  protected $color;
+  private $weight;
+}
+
+$mango = new Fruit();
+$mango->name = 'Mango'; // OK
+$mango->color = 'Yellow'; // ERROR
+$mango->weight = '300'; // ERROR
 
 
 @endphp

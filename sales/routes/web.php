@@ -72,3 +72,9 @@ Route::get('array/', function () {
 Route::get('/class', function () {
     return view('class');
 });
+
+Route::get('/Inheritance', function () {
+    return view('Inheritance');
+});
+
+ 

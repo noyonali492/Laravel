@@ -126,7 +126,7 @@ class man{
         $this->age = $age;
      }
      function __destruct(){
-        echo $this->name . " is " .$this->age;
+        echo $this->name . " age is " .$this->age;
      }
 }
 

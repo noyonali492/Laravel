@@ -22,7 +22,11 @@
         }
     }
 
-    $el= new employe("noyon",27,25000);
+    class manager extends employe{
+
+    }
+
+    $el= new manager("noyon",27,25000);
     $el->info();
 
     

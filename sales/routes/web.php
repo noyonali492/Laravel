@@ -76,5 +76,7 @@ Route::get('/class', function () {
 Route::get('/Inheritance', function () {
     return view('Inheritance');
 });
-
+Route::get('/constantclass', function () {
+    return view('constantclass');
+});
  

@@ -80,3 +80,7 @@ Route::get('/constantclass', function () {
     return view('constantclass');
 });
  
+Route::get('/abstractclass', function () {
+    return view('abstractclass');
+});
+  

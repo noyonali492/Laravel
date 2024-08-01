@@ -84,3 +84,6 @@ Route::get('/abstractclass', function () {
     return view('abstractclass');
 });
   
+Route::get('/oop',function(){
+        return view('/oop');
+});

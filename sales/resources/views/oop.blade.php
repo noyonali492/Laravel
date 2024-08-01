@@ -2,29 +2,47 @@
 @php
     
 
-    class calculatio{
-        public $a,$b,$c;
-        function sum(){
-            $this->c=$this->a + $this->b;
-            return $this->c;
-        }
-        function sub(){
-            $this->c=$this->a - $this->b;
-            return $this->c;
-        }
+    // class calculatio{
+    //     public $a,$b,$c;
+    //     function sum(){
+    //         $this->c=$this->a + $this->b;
+    //         return $this->c;
+    //     }
+    //     function sub(){
+    //         $this->c=$this->a - $this->b;
+    //         return $this->c;
+    //     }
+    // }
+
+
+    // $c1 = new calculatio();
+    // $c1->a = 20;
+    // $c1->b = 10;
+
+    // $c2 = new calculatio();
+    // $c2->a = 50;
+    // $c2->b = 35;
+
+    // echo $c1->sum() ."<br>";
+    
+    // echo $c2->sub();
+  
+   class person{
+    public $name;
+    public $age;
+
+    public function __construct($name, $age){
+            $this->name = $name;
+            $this->age= $age;
     }
 
+    public function show(){
+        return $this->name . " age" . $this->age;
+    }
+   }
 
-    $c1 = new calculatio();
-    $c1->a = 20;
-    $c1->b = 10;
+   $a1= new person('alim',20);
+   echo $a1->show();
 
-    $c2 = new calculatio();
-    $c2->a = 50;
-    $c2->b = 35;
-
-    $c1->sum();
-
-    $c2->sub();
   
 @endphp

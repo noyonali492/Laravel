@@ -27,22 +27,40 @@
     
     // echo $c2->sub();
   
-   class person{
+//    class person{
+//     public $name;
+//     public $age;
+
+//     public function __construct($name, $age){
+//             $this->name = $name;
+//             $this->age= $age;
+//     }
+
+//     public function show(){
+//         return $this->name . " age" . $this->age;
+//     }
+//    }
+
+//    $a1= new person('alim',20);
+//    echo $a1->show();
+  
+//    Abstract 
+
+ Abstract class parentClass{
     public $name;
-    public $age;
 
-    public function __construct($name, $age){
-            $this->name = $name;
-            $this->age= $age;
+    Abstract protected function calc($a,$b);
+  }
+
+  class childClass extends parentClass{
+
+    public function calc($a,$b){
+       // echo $a + $b;
+       echo " noyon";
     }
+  }
 
-    public function show(){
-        return $this->name . " age" . $this->age;
-    }
-   }
-
-   $a1= new person('alim',20);
-   echo $a1->show();
-
+  $test = new childClass();
+  $test->calc(10,50);
   
 @endphp

@@ -15,6 +15,7 @@
     // }
 
 
+
     // $c1 = new calculatio();
     // $c1->a = 20;
     // $c1->b = 10;
@@ -27,6 +28,9 @@
     
     // echo $c2->sub();
   
+
+
+    //__construct
 //    class person{
 //     public $name;
 //     public $age;
@@ -44,23 +48,53 @@
 //    $a1= new person('alim',20);
 //    echo $a1->show();
   
-//    Abstract 
 
- Abstract class parentClass{
-    public $name;
 
-    Abstract protected function calc($a,$b);
-  }
+// Abstract 
+//  Abstract class parentClass{
+//     public $name;
 
-  class childClass extends parentClass{
+//     Abstract protected function calc($a,$b);
+//   }
 
-    public function calc($a,$b){
-       // echo $a + $b;
-       echo " noyon";
-    }
-  }
+//   class childClass extends parentClass{
 
-  $test = new childClass();
-  $test->calc(10,50);
-  
+//     public function calc($a,$b){
+//        // echo $a + $b;
+//        echo " noyon";
+//     }
+//   }
+//   $test = new childClass();
+//   $test->calc(10,50);
+
+
+
+//Interfaces 
+
+interface parent1{
+     function calc($a,$b);
+}
+
+interface parent2{
+    function sub($c,$d);
+}
+
+class childClass implements parent1,parent2{
+public function calc($a,$b){
+        echo $a+$b. "<br>";
+}
+
+public function sub($c,$d){
+        echo $c - $d;
+}
+}
+
+$test = new childClass();
+$test->calc(10,10);
+$test->sub(10,5);
+
+
+
+
+
 @endphp

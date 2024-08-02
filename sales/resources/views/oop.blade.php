@@ -94,17 +94,44 @@
 // $test->sub(10,5);
 
 
-//static
+// static
 
-class base{
-    public static $name="noyon";
-    public static function show(){
-         echo  self::$name;
+// class base{
+//     public static $name="noyon";
+//     public static function show(){
+//          echo  self::$name;
+//     }
+// }
+// echo base::show();
+
+
+//Traits
+
+trait hello{
+    public function sayhi(){
+        return "hi everyone";
     }
 }
-echo base::show();
 
+trait bye{
+    public function saybye(){
+        return "Bye Bye everyone";
+    }
+}
 
+class welcome{
+    use hello;
+}
+$wel = new welcome();
+echo $wel->sayhi(). "<br>"."<br>";
+
+class welcome1{
+    use hello, bye;
+}
+
+$wel1 = new welcome1();
+echo $wel1->sayhi(). "<br>";
+echo $wel1->saybye();
 
 
 

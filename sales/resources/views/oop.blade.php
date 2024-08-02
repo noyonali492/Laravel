@@ -69,29 +69,40 @@
 
 
 
-//Interfaces 
+// Interfaces 
 
-interface parent1{
-     function calc($a,$b);
-}
+// interface parent1{
+//      function calc($a,$b);
+// }
 
-interface parent2{
-    function sub($c,$d);
-}
+// interface parent2{
+//     function sub($c,$d);
+// }
 
-class childClass implements parent1,parent2{
-public function calc($a,$b){
-        echo $a+$b. "<br>";
-}
+// class childClass implements parent1,parent2{
+// public function calc($a,$b){
+//         echo $a+$b. "<br>";
+// }
 
-public function sub($c,$d){
-        echo $c - $d;
-}
-}
+// public function sub($c,$d){
+//         echo $c - $d;
+// }
+// }
 
-$test = new childClass();
-$test->calc(10,10);
-$test->sub(10,5);
+// $test = new childClass();
+// $test->calc(10,10);
+// $test->sub(10,5);
+
+
+//static
+
+class base{
+    public static $name="noyon";
+    public static function show(){
+         echo  self::$name;
+    }
+}
+echo base::show();
 
 
 

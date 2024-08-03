@@ -105,34 +105,33 @@
 // echo base::show();
 
 
-//Traits
 
-trait hello{
-    public function sayhi(){
-        return "hi everyone";
-    }
-}
+// Traits
 
-trait bye{
-    public function saybye(){
-        return "Bye Bye everyone";
-    }
-}
+// trait hello{
+//     public function sayhi(){
+//         return "hi everyone";
+//     }
+// }
 
-class welcome{
-    use hello;
-}
-$wel = new welcome();
-echo $wel->sayhi(). "<br>"."<br>";
+// trait bye{
+//     public function saybye(){
+//         return "Bye Bye everyone";
+//     }
+// }
 
-class welcome1{
-    use hello, bye;
-}
+// class welcome{
+//     use hello;
+// }
+// $wel = new welcome();
+// echo $wel->sayhi(). "<br>"."<br>";
 
-$wel1 = new welcome1();
-echo $wel1->sayhi(). "<br>";
-echo $wel1->saybye();
+// class welcome1{
+//     use hello, bye;
+// }
 
-
+// $wel1 = new welcome1();
+// echo $wel1->sayhi(). "<br>";
+// echo $wel1->saybye();
 
 @endphp

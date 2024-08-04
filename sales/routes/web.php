@@ -1,4 +1,6 @@
 <?php
+ use App\Http\Controllers\DeshboardController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -87,3 +89,5 @@ Route::get('/abstractclass', function () {
 Route::get('/oop',function(){
         return view('/oop');
 });
+
+Route::get('/allwebsitedata',[DeshboardController::class,'listofwebsitedata']);

@@ -9,10 +9,12 @@ class DeshboardController extends Controller
 {
     public function listofwebsitedata(){
         
-       $grade = DB::select('select * from grade');
+       // $grade = DB::select('select * from grade');
+
+       $insertgrade= DB::insert("INSERT into grade(name,basic)VALUES('noyonCEO','50000')");
 
 
-       dd($grade);
+       dd($insertgrade);
 
     }
 }

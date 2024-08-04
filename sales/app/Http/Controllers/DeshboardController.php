@@ -11,10 +11,10 @@ class DeshboardController extends Controller
         
        // $grade = DB::select('select * from grade');
 
-       $insertgrade= DB::insert("INSERT into grade(name,basic)VALUES('noyonCEO','50000')");
+       //$insertgrade= DB::insert("INSERT into grade(name,basic)VALUES('noyonCEO','50000')");
+        $updategrade = DB::update("UPDATE grade SET name='noeo' WHERE id=0");
 
-
-       dd($insertgrade);
+       dd($updategrade);
 
     }
 }

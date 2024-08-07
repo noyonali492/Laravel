@@ -14,7 +14,7 @@ class DeshboardController extends Controller
        //$insertgrade= DB::insert("INSERT into grade(name,basic)VALUES('noyonCEO','50000')");
        // $updategrade = DB::update("UPDATE grade SET name='noeo' WHERE id=0");
 
-        $deletegrade= DB::delete("DELETE FROM `grade` WHERE id=0 ");
+       // $deletegrade= DB::delete("DELETE FROM `grade` WHERE id=0 ");
 
        dd($deletegrade);
 

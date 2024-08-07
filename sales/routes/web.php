@@ -25,7 +25,7 @@ route::prefix('page')->group(function(){
 
             route::get('/vedio', function(){
                 return "<h1>vedio Page</h1>";
-              });
+            });
 
         route::get('/audio', function(){
             return "<h1>audio Page</h1>";

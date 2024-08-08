@@ -16,8 +16,16 @@ class DeshboardController extends Controller
 
        // $deletegrade= DB::delete("DELETE FROM `grade` WHERE id=0 ");
 
-          $alldata = DB::table('grade')->get();
-
+      // $alldata = DB::table('grade')->get();
+      // $alldata =DB::table('grade')->first();
+      // $alldata = DB::table('grade')->where('id','2')->get();
+    //    $alldata = DB::table('grade')->insert(
+    //     [
+    //         'id' => 9,
+    //         'name' => 'raju',
+    //         'basic' => 20000
+    //     ]
+    //     );
        dd($alldata);
 
 

@@ -91,3 +91,8 @@ Route::get('/oop',function(){
 });
 
 Route::get('/allwebsitedata',[DeshboardController::class,'listofwebsitedata']);
+
+//dashboard Start
+Route::get('/mydashboard','DeshboardController@mydashboard')->name('mydashboard');
+Route::get('/form','DeshboardController@form');
+Route::get('/register','DeshboardController@register');

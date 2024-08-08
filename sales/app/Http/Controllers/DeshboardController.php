@@ -28,10 +28,22 @@ class DeshboardController extends Controller
     //     );
 
     // $alldata = DB::table('grade')->where('id',9)->update(['name'=>'aul']);
-    $alldata = DB::table('grade')->where('id',9)->delete();
+    // $alldata = DB::table('grade')->where('id',9)->delete();
 
-       dd($alldata);
+      // dd($alldata);
 
 
     }
+
+    public function mydashboard(){
+        return view('dashboard.dashboard');
+    }
+
+    public function form(){
+        return view('dashboard.pages.form');
+    }
+    public function register(){
+        return view('dashboard.pages.register');
+    }
+
 }

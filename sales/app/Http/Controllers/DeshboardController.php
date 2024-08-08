@@ -26,6 +26,8 @@ class DeshboardController extends Controller
     //         'basic' => 20000
     //     ]
     //     );
+
+    $alldata = DB::table('grade')->where('id',9)->update(['name'=>'aul']);
        dd($alldata);
 
 

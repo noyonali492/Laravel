@@ -55,4 +55,21 @@ class DeshboardController extends Controller
          return view('dashboard.pages.table',['alldata'=>$alldata]);
     }
 
+    public function addgrade(){
+        return view('dashboard.pages.addgrade');
+    }
+
+    public function savegrad(Request $request){
+        $name = $request->name;
+        $basic = $request->basic;
+        DB::table('grade')->insert(
+            [
+                'name' => $name,
+                'basic' => $basic
+
+            ]
+        );
+        return redirect('/gradetable')->with('msg','Grade Add successfully');
+    }
+
 }

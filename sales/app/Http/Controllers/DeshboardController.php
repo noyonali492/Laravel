@@ -27,7 +27,9 @@ class DeshboardController extends Controller
     //     ]
     //     );
 
-    $alldata = DB::table('grade')->where('id',9)->update(['name'=>'aul']);
+    // $alldata = DB::table('grade')->where('id',9)->update(['name'=>'aul']);
+    $alldata = DB::table('grade')->where('id',9)->delete();
+
        dd($alldata);
 
 

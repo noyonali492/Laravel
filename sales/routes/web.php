@@ -96,3 +96,4 @@ Route::get('/allwebsitedata',[DeshboardController::class,'listofwebsitedata']);
 Route::get('/mydashboard','DeshboardController@mydashboard')->name('mydashboard');
 Route::get('/form','DeshboardController@form');
 Route::get('/register','DeshboardController@register');
+Route::get('/gradetable','DeshboardController@gradetable');

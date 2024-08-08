@@ -46,4 +46,13 @@ class DeshboardController extends Controller
         return view('dashboard.pages.register');
     }
 
+    public function gradetable(){
+        
+        $alldata = DB::table('grade')->get();
+
+
+           // dd($alldata);
+         return view('dashboard.pages.table',['alldata'=>$alldata]);
+    }
+
 }

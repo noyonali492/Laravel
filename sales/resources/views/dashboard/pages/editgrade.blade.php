@@ -4,7 +4,7 @@
  <div class="col-12 gXZrid-margin stretch-card">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">Add Grade</h4>
+        <h4 class="card-title">Edit Grade</h4>
         <br>
         <a href="{{url('/gradetable')}}" class="label label-info"> View Grade Data Table </a>
         <form class="forms-sample" action="{{'/savegrad'}}" method="post">

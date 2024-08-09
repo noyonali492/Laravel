@@ -15,7 +15,7 @@
           <th>Id</th>
           <th>Name</th>
           <th>basic</th>
-          <th>user_by</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -30,7 +30,7 @@
       <td>{{ $alldata->id}}</td>
       <td>{{ $alldata->name}}</td>
       <td>{{ $alldata->basic}}</td>
-      <td>{{ $alldata->user_by}}</td>
+      <td><a href="{{url('/editgrade'.$alldata->id)}}" >Edit</a> ! Delete</td>
     </tr>    
     
      @endforeach

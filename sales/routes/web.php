@@ -99,3 +99,5 @@ Route::get('/register','DeshboardController@register');
 Route::get('/gradetable','DeshboardController@gradetable');
 Route::get('/addgrade','DeshboardController@addgrade');
 Route::post('/savegrad','DeshboardController@savegrad');
+Route::get('/editgrade/{id}','DeshboardController@editgrade');
+Route::post('/updategrade','DeshboardController@updategrade');

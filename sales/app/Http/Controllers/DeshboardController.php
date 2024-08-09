@@ -52,7 +52,7 @@ class DeshboardController extends Controller
 
 
            // dd($alldata);
-         return view('dashboard.pages.table',['alldata'=>$alldata]);
+         return view('dashboard.pages.table',['alldatas'=>$alldata]);
     }
 
     public function addgrade(){
@@ -70,6 +70,27 @@ class DeshboardController extends Controller
             ]
         );
         return redirect('/gradetable')->with('msg','Grade Add successfully');
+    }
+
+    public function editgrade($id){
+        
+        $gradeid = DB::table('grade')->where('id',$id)->first();
+
+        return view('dashboard.pages.editgrade',['gradeid'=>$gradeid]);
+        //dd($gradeid);
+    }
+
+    public function updategrade(Request $request){
+         $name = $request->name;
+         $basic = $request->basic;
+         $id = $request->id;
+         DB::table('grade')->where('id',$id)->update([
+                'name' => $name,
+                'basic' => $basic
+         ]);
+         return redirect('/gradetable')->with('msg','Grade update successfully');
+        
+       // dd($request->id);
     }
 
 }

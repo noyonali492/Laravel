@@ -22,15 +22,15 @@
       @php
          $i=0; 
       @endphp
-       @if ($alldata == true )
-     @foreach ($alldata as $alldata)
+       @if ($alldatas == true )
+     @foreach ($alldatas as $alldata)
     
      <tr>
       <td>{{ ++$i }}</td>
       <td>{{ $alldata->id}}</td>
       <td>{{ $alldata->name}}</td>
       <td>{{ $alldata->basic}}</td>
-      <td><a href="{{url('/editgrade'.$alldata->id)}}" >Edit</a> ! Delete</td>
+      <td><a href="{{url('/editgrade/'.$alldata->id)}}" >Edit</a> ! Delete</td>
     </tr>    
     
      @endforeach

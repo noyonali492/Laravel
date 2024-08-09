@@ -93,4 +93,13 @@ class DeshboardController extends Controller
        // dd($request->id);
     }
 
+    public function deletegrade($id){
+        
+         DB::table('grade')->where('id',$id)->delete();
+
+        return redirect('/gradetable')->with('msg','Grade Delete successfully');
+        //dd($gradeid);
+    }
+
 }
+ 

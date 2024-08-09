@@ -101,3 +101,4 @@ Route::get('/addgrade','DeshboardController@addgrade');
 Route::post('/savegrad','DeshboardController@savegrad');
 Route::get('/editgrade/{id}','DeshboardController@editgrade');
 Route::post('/updategrade','DeshboardController@updategrade');
+Route::get('/deletegrade/{id}','DeshboardController@deletegrade');

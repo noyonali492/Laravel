@@ -30,7 +30,8 @@
       <td>{{ $alldata->id}}</td>
       <td>{{ $alldata->name}}</td>
       <td>{{ $alldata->basic}}</td>
-      <td><a href="{{url('/editgrade/'.$alldata->id)}}" >Edit</a> ! Delete</td>
+      <td><a href="{{url('/editgrade/'.$alldata->id)}}" >Edit</a> !
+        <a href="{{url('/deletegrade/'.$alldata->id)}}" >Delete</a></td>
     </tr>    
     
      @endforeach

@@ -48,7 +48,7 @@ class DeshboardController extends Controller
 
     public function gradetable(){
         
-        $alldata = DB::table('grade')->get();
+        $alldata = DB::table('grade')->paginate(5);
 
 
            // dd($alldata);
